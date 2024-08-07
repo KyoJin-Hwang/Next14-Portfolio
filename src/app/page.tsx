@@ -1,14 +1,16 @@
 'use client'
 import Profile from '@/components/Profile/profile'
+import { useIsMobileStore } from '@/store/IsMobile'
 import { useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 const Home = () => {
-  const isMobile = useMediaQuery({ query: '(max-width:1099px)' })
+  const isMobile = useMediaQuery({ query: '(max-width:767px)' })
+  const { isMobileChange } = useIsMobileStore()
   useEffect(() => {
     if (isMobile) {
-      localStorage.setItem('isMobile', 'true')
+      isMobileChange(true)
     } else {
-      localStorage.setItem('isMobile', 'false')
+      isMobileChange(false)
     }
   }, [isMobile])
   return (

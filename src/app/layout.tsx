@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import localFont from 'next/font/local'
-import Loading from '@/components/Loading/loading'
 
 export const metadata: Metadata = {
   title: '황교진 포트폴리오 및 기술이력서',
@@ -22,10 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${pretendard.className} bg-[#0064FF]`}>
-        {/* <Loading /> */}
-        {children}
-      </body>
+      <body className={`${pretendard.className} bg-[#0064FF]`}>{children}</body>
     </html>
   )
 }
