@@ -1,5 +1,5 @@
 'use client'
-import Profile from '@/components/Profile/profile'
+import Profile from '@/components/profile/profile'
 import { useIsMobileStore } from '@/store/IsMobile'
 import { useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
