@@ -137,3 +137,10 @@ table {
   justify-content: center;
   align-items: center;
 }
+
+.dark-mode {
+  background: rgb(0, 0, 0);
+}
+.white-mode {
+  background: #0064ff;
+}
