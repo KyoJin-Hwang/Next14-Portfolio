@@ -20,8 +20,7 @@ const Home = () => {
   }, [isMobile])
 
   return (
-    <div className={`relative z-0 ${isDark ? 'dark-mode' : 'white-mode'}`}>
-      s{' '}
+    <div className={`relative ${isDark ? 'dark-mode' : 'white-mode'}`}>
       <div className="fixed w-full flex justify-end bottom-[1rem] px-4 z-20">
         <Remocon />
       </div>
